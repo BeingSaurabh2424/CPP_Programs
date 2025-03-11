@@ -7,7 +7,7 @@ inline void add(int n1,int n2,int n3=1, int n4 = 3)
 
 int main()
 {
-    add(24,24);
+    add(24,24,1,6);
 
     return 0;
 }
