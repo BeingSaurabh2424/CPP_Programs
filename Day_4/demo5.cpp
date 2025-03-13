@@ -1,4 +1,5 @@
-#include<iostream>
+#include <iostream>
+
 using namespace std;
 
 class Employee
@@ -48,29 +49,24 @@ public:
 
 int main()
 {
-    Employee **ptr = new Employee *[5];
-    ptr[0] = new Employee(1,"Anil",10000);
-    ptr[1] = new Employee(2,"Mukesj",20000);
-    ptr[2] = new Employee(3,"Ramesh",30000);
-    ptr[3] = new Employee(4,"Suresh",40000);
-    ptr[4] = new Employee(5,"Ram",50000);
+    Employee *ptr = new Employee[5];
+    
+    ptr[0] = Employee(1,"Saurabh",5000);
+    ptr[1] = Employee(2,"Aditya",6000);
+    ptr[2] = Employee(3,"Suraj",7000);
+    ptr[3] = Employee(4,"Manoj",8000);
+    ptr[4] = Employee(5,"Sanjeevni",9000);
 
-    for(int i=0; i<5; i++)
+
+    for(int i = 0; i<5; i++)
     {
         ptr[i]->display();
-
     }
-
-    //deallocating memory
-
-    for(int i =0; i<5; i++)
-    {
-        delete ptr[i];
-        ptr[i]=NULL;
-    }
-
-    delete[] ptr;
-    ptr = NULL;
+    
     return 0;
 }
+
+
+  
+
 

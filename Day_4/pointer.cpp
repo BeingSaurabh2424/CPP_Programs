@@ -7,8 +7,11 @@ int main()
     cout<<var<<endl;
 
     int *ptr = &var;
-
     cout<<ptr;
+
+
+
+    
 
 
     return 0;
