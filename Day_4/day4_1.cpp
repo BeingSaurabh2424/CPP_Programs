@@ -77,7 +77,7 @@ int main()
     b2.displayAccountDetails();
 
     const BankAccount b3(1003, "Ramesh", 30000);
-    b3.getName();
+    cout<<b3.getName();
    
     return 0;
 }
